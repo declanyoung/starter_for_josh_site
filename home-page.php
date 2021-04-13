@@ -25,7 +25,7 @@
           <div class="row">
               <!-- a row that gives access to s columns-->
           <div>
-<div class="article-title text-center">
+              <h3 class="article-title text-center">LATEST ARTICLES</h3>
                <h3 class="text-center article-title "><?php the_field('titleforarticles'); ?></h3>
 
           </div>
