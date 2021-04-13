@@ -28,3 +28,18 @@ add_filter('nav_menu_css_class', 'add_menu_list_item_class', 1, 3);
 		echo 'style="background: url(' . get_field(' headerbackgroundimage') . ')"';
 	}
 ?>
+<?php
+function tagline() {
+
+	register_sidebar( array(
+		'name'          => 'main tagline',
+		'id'            => 'main_tag',
+		'before_widget' => '<div>',
+		'after_widget'  => '</div>',
+		'before_title'  => '<h2 class="rounded">',
+		'after_title'   => '</h2>',
+	) );
+
+}
+add_action( 'widgets_init', 'tagline' );
+?>
